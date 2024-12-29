@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.special_container {
+  display: flex;
+  justify-content: center;
+  width: 660px;
+  gap: 110px;
+  border-radius: 13px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  padding: 11px;
+  position: relative;
+  &__left {
+    padding: 10px;
+  }
+}
+
+.name{
+    margin-bottom: 10px;
+}
+
+.price_box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 40px 0 0;
+}
+
+.back_button {
+  &:link,
+  &:visited {
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    color: inherit;
+    position: absolute;
+    left: 0;
+    top: -30%;
+  }
+}
